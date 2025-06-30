@@ -1,0 +1,10 @@
+[user]
+	name = ivarjt
+	email = 60068369+ivarjt@users.noreply.github.com
+	signingkey = ~/.ssh/id_ed25519.pub
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /home/ivar/.ssh/allowed_signers
