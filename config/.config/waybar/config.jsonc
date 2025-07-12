@@ -1,0 +1,45 @@
+{
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["network", "pulseaudio", "battery", "clock"],
+
+  "clock": {
+    "format": "<span foreground='#FFFFFF'>   </span>{:%a %d %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "<span size='13000' foreground='#FFFFFF'>{icon} </span> {capacity}%",
+    "format-warning": "<span size='13000' foreground='#BBBBBB'>{icon} </span> {capacity}%",
+    "format-critical": "<span size='13000' foreground='#888888'>{icon} </span> {capacity}%",
+    "format-charging": "<span size='13000' foreground='#BBBBBB'> </span>{capacity}%",
+    "format-plugged": "<span size='13000' foreground='#BBBBBB'> </span>{capacity}%",
+    "format-alt": "<span size='13000' foreground='#BBBBBB'>{icon} </span> {time}",
+    "format-full": "<span size='13000' foreground='#FFFFFF'> </span>{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip-format": "{time}"
+  },
+
+  "network": {
+    "format-wifi": "<span size='13000' foreground='#FFFFFF'>  </span>{essid}",
+    "format-ethernet": "<span size='13000' foreground='#FFFFFF'>Ethernet</span>",
+    "format-linked": "<span size='13000' foreground='#FFFFFF'>{ifname} (No IP)</span>",
+    "format-disconnected": "<span size='13000' foreground='#FFFFFF'>  </span>Disconnected",
+    "tooltip-format-wifi": "Signal Strength: {signalStrength}%",
+    "tooltip-format-ethernet": "Interface: {ifname}\nIP: {ipaddr}\nMAC: {mac}"
+  },
+
+  "pulseaudio": {
+    "format": "<span foreground='#FFFFFF'>{icon}</span>  {volume}%",
+    "format-muted": "<span foreground='#888888'></span>",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
+  }
+}

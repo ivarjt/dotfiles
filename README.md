@@ -23,9 +23,3 @@ git clone git@github.com:ivarjt/dotfiles.git ~/dotfiles
 ```bash
 git clone https://github.com/ivarjt/dotfiles.git ~/dotfiles
 ```
-
-Then run:
-```bash
-cd ~/dotfiles
-./bootstrap.sh
-```

@@ -1,0 +1,127 @@
+@import "mocha.css";
+
+* {
+    font-family: "MesloLGS Nerd Font Mono Bold";
+    font-size: 16px;
+    min-height: 0;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: rgba(0, 0, 0, 0.3);
+    color: #E0E0E0;
+    transition-property: background-color;
+    transition-duration: 0.1s;
+    border-bottom: none;
+}
+
+#window {
+    margin: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+
+button:hover {
+    background: inherit;
+    color: #C0C0C0;  
+    border-top: none;
+}
+
+#workspaces button {
+    padding: 0 4px;
+    color: #B0B0B0;  
+}
+
+#workspaces button.focused {
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #F5F5F5;  
+    border-top: none;
+}
+
+#workspaces button.active {
+    background-color: rgba(111, 122, 225, 0.12);
+    color: #DADADA;
+    border-top: none;
+}
+
+#workspaces button.urgent {
+    background-color: #FF0000; 
+}
+
+#pulseaudio,
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#wireplumber,
+#tray,
+#network,
+#mode,
+#scratchpad {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#clock {
+    color: #E0E0E0;
+    border-bottom: none;
+}
+
+#clock.date {
+    color: #C0C0C0;
+    border-bottom: none;
+}
+
+#pulseaudio {
+    color: #E0E0E0;
+    border-bottom: none;
+}
+
+#network {
+    color: #E0E0E0;
+    border-bottom: none;
+}
+
+#idle_inhibitor {
+    margin-right: 12px;
+    color: #888888;
+}
+
+#idle_inhibitor.activated {
+    color: #FF0000;
+}
+
+#battery {
+    color: #E0E0E0;
+    border-bottom: none;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+#custom-vpn {
+    color: #E0E0E0;
+    border-radius: 15px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
