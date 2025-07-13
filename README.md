@@ -34,16 +34,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 reboot
 ```
 ```bash
-git clone [https://github.com/zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions) \  
-${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions  
+sudo pacman -S zsh-completions
 ```
 ```bash
-git clone [https://github.com/zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) \  
-${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions  
+yay -S zsh-autosuggestions
 ```
 ```bash
-git clone --depth=1 [https://github.com/romkatv/powerlevel10k.git](https://github.com/romkatv/powerlevel10k.git) \  
-${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k  
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 ```
 ```bash
 p10k configure
