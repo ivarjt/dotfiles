@@ -40,23 +40,18 @@ sudo pacman -S zsh-completions
 yay -S zsh-autosuggestions
 ```
 ```bash
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 ```
 ```bash
 git clone https://github.com/ivarjt/dotfiles.git
 ```
 ```bash
-cd dotfiles  
-```
-```bash
-stow .
-```
-```bash
+rm ~/.zshrc
+cd dotfiles
+stow zsh
 source ~/.zshrc
+p10k configure  
 ```
-```bash
-p10k configure
-```
-```bash
-source ~/.zshrc
-```
+
+
