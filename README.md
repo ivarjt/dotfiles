@@ -22,6 +22,10 @@ sudo pacman -S zsh stow fzf hyprpaper hyprlock waybar wofi git jq wl-clipboard t
 ```
 ```bash
 git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
 ```
 ```bash
 sh -c "$(curl -fsSL [https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh](https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh))"  
