@@ -18,7 +18,7 @@ sudo pacman -Syu
 ```
 
 ```bash
-sudo pacman -S zsh stow fzf hyprpaper hyprlock waybar wofi git eza jq wl-clipboard ttf-font-awesome ttf-jetbrains-mono-nerd
+sudo pacman -S zsh stow fzf hyprpaper hyprlock waybar wofi git eza bat jq wl-clipboard ttf-font-awesome ttf-jetbrains-mono-nerd
 ```
 ```bash
 git clone https://aur.archlinux.org/yay.git
@@ -34,11 +34,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 reboot
 ```
 ```bash
-sudo pacman -S zsh-completions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 ```
-```bash
-yay -S zsh-autosuggestions
-```
+
 ```bash
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
@@ -56,5 +55,12 @@ cd dotfiles
 stow zsh
 source ~/.zshrc
 ```
-
+``` bash
+cd ~/.config
+rm -rf kitty
+rm -rf hypr
+cd ..
+cd dotfiles
+stow config
+```
 
