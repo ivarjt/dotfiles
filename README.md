@@ -18,7 +18,10 @@ sudo pacman -Syu
 ```
 
 ```bash
-sudo pacman -S yay zsh stow fzf hyprpaper hyprlock waybar wofi git jq wl-clipboard ttf-font-awesome ttf-jetbrains-mono-nerd
+sudo pacman -S zsh stow fzf hyprpaper hyprlock waybar wofi git jq wl-clipboard ttf-font-awesome ttf-jetbrains-mono-nerd
+```
+```bash
+git clone https://aur.archlinux.org/yay.git
 ```
 ```bash
 sh -c "$(curl -fsSL [https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh](https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh))"  
