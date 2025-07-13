@@ -43,9 +43,6 @@ yay -S zsh-autosuggestions
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 ```
 ```bash
-p10k configure
-```
-```bash
 git clone [https://github.com/ivarjt/dotfiles.git](https://github.com/ivarjt/dotfiles.git)  
 ```
 ```bash
@@ -53,6 +50,12 @@ cd dotfiles
 ```
 ```bash
 stow .
+```
+```bash
+source ~/.zshrc
+```
+```bash
+p10k configure
 ```
 ```bash
 source ~/.zshrc
