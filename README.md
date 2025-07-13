@@ -31,6 +31,9 @@ rm -rf yay
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 ```bash
+reboot
+```
+```bash
 git clone [https://github.com/zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions) \  
 ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions  
 ```
