@@ -28,7 +28,7 @@ cd ..
 rm -rf yay
 ```
 ```bash
-sh -c "$(curl -fsSL [https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh](https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh))"  
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 ```bash
 git clone [https://github.com/zsh-users/zsh-completions](https://github.com/zsh-users/zsh-completions) \  
